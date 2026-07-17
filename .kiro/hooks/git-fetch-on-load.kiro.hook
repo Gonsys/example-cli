@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Git Fetch",
+  "description": "Runs git fetch to sync remote changes. Trigger this when opening the project to stay up to date.",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "git fetch --all"
+  }
+}
